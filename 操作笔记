@@ -1,0 +1,11 @@
+
+# 链接neo4j的数据库
+docker run -it -d -p 7474:7474 -p 7687:7687 -v ~/github/common/Agriculture_KnowledgeGraph:/var/lib/neo4j/import/ --env=NEO4J_dbms_memory_heap_maxSize=4G neo4j
+
+#查看neo4j镜像目录
+sudo docker ps
+#显示为d65911dd09a9
+
+#把hudong_pedia.csv导入neo4j
+sudo docker cp hudong_pedia.csv d65:/var/lib/neo4j/import
+
