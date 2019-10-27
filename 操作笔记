@@ -13,3 +13,6 @@ sudo docker cp hudong_pedia.csv d65:/var/lib/neo4j/import
 
 #如果在导入数据到neo4j browser的时候提示内存溢出，在导入语句前加一句：
 USING PERIODIC COMMIT
+
+#运行sudo sh django_server_start.sh进入华师大农业知识图谱网站
+http://127.0.0.1:8000/
